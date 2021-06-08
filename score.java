@@ -9,6 +9,7 @@ public class score {
     private static double increaseBy = 0.1;
     private static int numOfMiners = 0;
 
+    // getters and setters for each variable
     public static double getPoints() {
         return points;
     }

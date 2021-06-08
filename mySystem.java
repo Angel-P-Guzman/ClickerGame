@@ -18,7 +18,8 @@ public class mySystem {
 
     private static String[] parameters = new String[9];
 
-    public static void save() {
+    public static void save() { // wrties to a file "save.txt" in the same directory as all the other java
+                                // files.
         try {
             // Assume default encoding.
             FileWriter fileWriter = new FileWriter(fileName);
@@ -55,7 +56,7 @@ public class mySystem {
 
     // public static void reset(){}
 
-    public static void load() {
+    public static void load() { // loads and sets all the variables from the "save.txt" file;
         String temp = null;
 
         int position = 0;
@@ -90,6 +91,23 @@ public class mySystem {
             System.out.println("Error reading file '" + fileName + "'");
         }
 
-        score.setter(strength, pts, minerR8, perice, minerPerice, minerTlPrice, mod, increase, numMiners);
+        score.setter(strength, pts, minerR8, perice, minerPerice, minerTlPrice, mod, increase, numMiners); // sets all
+                                                                                                           // the
+                                                                                                           // variables
+                                                                                                           // to those
+                                                                                                           // of the
+                                                                                                           // save file.
+                                                                                                           // Although
+                                                                                                           // some
+                                                                                                           // variables
+                                                                                                           // are not
+                                                                                                           // implimented
+                                                                                                           // as i could
+                                                                                                           // not
+                                                                                                           // implement
+                                                                                                           // a timed
+                                                                                                           // function
+                                                                                                           // like I
+                                                                                                           // wanted.
     }
 }

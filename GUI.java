@@ -27,7 +27,7 @@ public class GUI implements ActionListener {
         // loads on start so that the variables are set to their correct values
         numFmt.setMinimumFractionDigits(3);
         mySystem.load();
-        mySystem.save();
+        mySystem.save(); // creates a file for later writing to
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
@@ -53,9 +53,9 @@ public class GUI implements ActionListener {
         screen.add(mine);
         screen.add(buyTool);
         frame.add(screen);
-        // screen.add(hireMiners);
-        // screen.add(buyTool);
-        // screen.add(buyBetterMinersTools);
+        // screen.add(hireMiners); --Vestigial--
+        // screen.add(buyTool); --Vestigial--
+        // screen.add(buyBetterMinersTools); --Vestigial--
         // Display the window.
 
         frame.setMinimumSize(new Dimension(1280, 800));

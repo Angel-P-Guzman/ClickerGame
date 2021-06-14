@@ -35,7 +35,7 @@ public class score {
     }
 
     public static void changePrice(double modify) { // to be done for both miner tools and player tools
-        price = price + (price * modify);
+        price = price + (price * modify) + 1;
     }
 
     public static void changeStrength(double d) {

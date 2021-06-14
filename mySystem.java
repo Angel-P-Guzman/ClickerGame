@@ -86,28 +86,15 @@ public class mySystem {
             // Always close files.
             bufferedReader.close();
         } catch (FileNotFoundException ex) {
-            System.out.println("Unable to open file '" + fileName + "'");
+            save();
         } catch (IOException ex) {
             System.out.println("Error reading file '" + fileName + "'");
         }
 
-        score.setter(strength, pts, minerR8, perice, minerPerice, minerTlPrice, mod, increase, numMiners); // sets all
-                                                                                                           // the
-                                                                                                           // variables
-                                                                                                           // to those
-                                                                                                           // of the
-                                                                                                           // save file.
-                                                                                                           // Although
-                                                                                                           // some
-                                                                                                           // variables
-                                                                                                           // are not
-                                                                                                           // implimented
-                                                                                                           // as i could
-                                                                                                           // not
-                                                                                                           // implement
-                                                                                                           // a timed
-                                                                                                           // function
-                                                                                                           // like I
-                                                                                                           // wanted.
+        score.setter(strength, pts, minerR8, perice, minerPerice, minerTlPrice, mod, increase, numMiners);
+        // sets all the variables to those of the save file. Although some variables are
+        // not implimented as i could not implement a timed function like I wanted.
+        // although it might be implimented today or tomorrow.z
+
     }
 }
